@@ -1,0 +1,43 @@
+img{
+    width: 200px;
+}
+/* Agregar contenido antes del contenido del elemento <p> */
+p::before {
+    content: "Before: ";
+    font-style: italic;
+    color: rgb(234, 0, 255);
+}
+
+/* Agregar contenido después del contenido del elemento <p> */
+p::after {
+    content: ": After";
+    font-style: italic;
+    color: rgb(255, 106, 0);
+}
+
+/* Estilizar la primera letra de un párrafo */
+p::first-letter {
+    font-size: 3em;
+    color: rgb(255, 0, 0);
+}
+
+/* Estilizar la "primera línea de un párrafo" */
+p::first-line {
+    font-weight: bold;
+}
+
+
+/* Estilizar la "selección" de texto en un elemento */
+p::selection {
+    background-color: yellow;
+    color: rgb(206, 19, 19);
+}
+
+/* Estilizar el marcador de lista en una lista desordenada */
+
+li::before {
+    content: "►"; /* Agrega contenido antes del marcador */
+    color: rgb(228, 3, 172); /* Cambia el color del contenido agregado */
+  }
+
+

@@ -1,0 +1,66 @@
+
+
+img{
+    width: 300px;
+}
+
+/* Cambiar el color de los enlaces cuando se pasan con el mouse */
+a:hover {
+    color: red;
+    text-decoration:underline;
+  }
+  
+/* Aplicar estilos a los enlaces que ya han sido visitados */
+a:visited {
+    color: rgb(106, 5, 74);
+}
+
+/* Cambiar el color de los botones de envío cuando se están presionando */
+input[type="submit"]:active {
+    background-color: darkblue;
+    color: white;
+}
+
+/* Estilo para el primer elemento de su tipo en el contenedor article */
+article p:first-of-type {
+    font-weight: bold;
+    color: green;
+}
+
+/* Estilo para el ultimo elemento de su tipo en el contenedor article*/
+article p:last-of-type {
+    font-style: italic;
+    color: blue;
+}
+
+/* Estilo para el input de texto cuando está deshabilitado */
+input[type="text"]:disabled {
+    background-color: lightgray;
+    color: gray;
+}
+
+/* Cambiar el color de fondo del primer ítem en una lista ordenada */
+ol li:first-child {
+    background-color: yellow;
+}
+
+/* Cambiar el estilo de h1 con la clase .importantdate al pasar el mouse */
+h1.importantdate:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.1); /* Agranda la imagen un 10% */
+    border: 3px solid rgb(255, 136, 0); /* Añade un borde azul */
+    transition: transform 0.3s ease, border 0.3s ease; /* Transiciones */
+}
+
+
+
+/*ajustes adicionales
+/* Resaltar el enlace con fondo de color y texto en negrita */
+.highlight {
+    background-color: #ff0000; /* Color de fondo */
+    font-weight: bold; /* Texto en negrita */
+}
