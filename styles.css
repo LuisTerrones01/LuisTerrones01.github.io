@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+
+body{
+	background-image: url(https://i.blogs.es/d5130c/wallpaper-2.png/1366_2000.webp);
+	background-size: cover;
+}
+
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: rgba(64, 64, 64, 0.6); /* Fondo semitransparente */
+	font-size: 20px;
+	margin-top: 50px;
+	border-radius: 8px; /* Bordes redondeados para darle un toque más moderno */
+}
+
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu-horizontal > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu-horizontal > li:hover{
+	background-color: rgba(255, 0, 0, 0.6); /* Rojo semitransparente */
+}
+
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para el submenú */
+	border-radius: 5px;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+
+.menu-vertical li:hover{
+	background-color: rgba(0, 0, 0, 0.9); /* Fondo más oscuro al pasar el ratón */
+}
+
+.menu-vertical li a{
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 15px 15px 15px 20px;
+}
+
+#html{
+	margin: auto;
+	padding: 20px;
+	max-width: 900px;
+	background: white;
+}
